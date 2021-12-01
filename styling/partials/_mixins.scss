@@ -1,0 +1,9 @@
+@mixin mobile-headings {
+  color: $orange;
+  font-size: 50px;
+  font-weight: 400;
+}
+@mixin desktop-headings {
+  color: $orange;
+  font-size: 80px;
+}

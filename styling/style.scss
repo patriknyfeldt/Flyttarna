@@ -1,0 +1,71 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+* {
+  font-family: $main-font;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $background-color;
+}
+.container {
+  .header {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 600px) {
+          flex-direction: row;
+
+          a:first-child {
+            display: none;
+          }
+        }
+
+        .hide {
+          display: none;
+          @media (min-width: 600px) {
+            display: initial;
+          }
+        }
+        .show {
+          display: initial;
+        }
+      }
+
+      a {
+        color: $darkblue;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+    .heading {
+      @include mobile-headings;
+    }
+  }
+}
+
+// .nav.responsive {
+//   position: relative;
+// }
+// .nav.responsive .icon {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+// .nav.responsive a {
+//   float: none;
+//   display: block;
+//   text-align: left;
+// }

@@ -1,0 +1,80 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e7e9e3;
+}
+
+.container .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .header .nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container .header .nav .nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .header .nav .nav-links a:first-child {
+    display: none;
+  }
+}
+
+.container .header .nav .nav-links .hide {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .container .header .nav .nav-links .hide {
+    display: initial;
+  }
+}
+
+.container .header .nav .nav-links .show {
+  display: initial;
+}
+
+.container .header .nav a {
+  color: #225675;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.container .header .nav a:hover {
+  color: #e6873c;
+}
+
+.container .header .heading {
+  color: #e6873c;
+  font-size: 50px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
