@@ -9,56 +9,63 @@
 body {
   background: $background-color;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: initial;
+}
 
 .container {
   .header {
-    .nav {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .top-wrapper {
       display: flex;
-      justify-content: flex-end;
       align-items: center;
+      justify-content: space-between;
+    }
+    .nav {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       overflow: hidden;
-      position: relative;
-
-      i {
-        font-size: 40px;
-      }
-
-      div:first-child {
-        position: absolute;
-        left: 0px;
-        top: 20px;
-      }
-
-      .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @media (min-width: 600px) {
-          flex-direction: row;
-
-          a:first-child {
-            display: none;
-          }
-        }
-
-        .hide {
-          display: none;
-          @media (min-width: 600px) {
-            display: initial;
-          }
-        }
-        .show {
+      @media (min-width: 600px) {
+        flex-direction: row;
+        a {
           display: initial;
         }
       }
+    }
 
-      a {
-        color: $darkblue;
-        padding: 16px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        &:hover {
-          color: $orange;
+    a {
+      color: $darkblue;
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      &:hover {
+        color: $orange;
+      }
+    }
+    i {
+      font-size: 40px;
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+
+        a:first-child {
+          display: none;
         }
       }
     }

@@ -9,31 +9,50 @@ body {
   background: #e7e9e3;
 }
 
-.container .header .nav {
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
+.container .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .container .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.container .header .top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.container .header .nav i {
-  font-size: 40px;
-}
-
-.container .header .nav div:first-child {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-}
-
-.container .header .nav .nav-links {
+.container .header .nav {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,43 +63,59 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 @media (min-width: 600px) {
-  .container .header .nav .nav-links {
+  .container .header .nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .container .header .nav .nav-links a:first-child {
-    display: none;
-  }
-}
-
-.container .header .nav .nav-links .hide {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  .container .header .nav .nav-links .hide {
+  .container .header .nav a {
     display: initial;
   }
 }
 
-.container .header .nav .nav-links .show {
-  display: initial;
-}
-
-.container .header .nav a {
+.container .header a {
   color: #225675;
   padding: 16px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.container .header .nav a:hover {
+.container .header a:hover {
   color: #e6873c;
+}
+
+.container .header i {
+  font-size: 40px;
+}
+
+.container .header .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (min-width: 600px) {
+  .container .header .hamburger {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .header .hamburger a:first-child {
+    display: none;
+  }
 }
 
 .container .heading {
