@@ -102,6 +102,84 @@ body {
 
 
 // Patrik Lundberg
+.container {
+
+  .main {
+
+    .flex-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img-container {
+        border: 1px solid black;
+        
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+
+      .contact-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+
+        .contact-info {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          text-align: center;
+          border: 1px solid black;
+        }
+
+        .contact-form {
+          width: 100%;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .form {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            #name {
+              width: 140px;
+            }
+
+            #email {
+              width: 150px;
+            }
+
+            select {
+              width: 290px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 // Patrik Lundberg
 
