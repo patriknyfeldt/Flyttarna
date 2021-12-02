@@ -9,13 +9,25 @@
 body {
   background: $background-color;
 }
+
 .container {
   .header {
     .nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       overflow: hidden;
+      position: relative;
+
+      i {
+        font-size: 40px;
+      }
+
+      div:first-child {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+      }
 
       .nav-links {
         display: flex;
@@ -42,7 +54,7 @@ body {
 
       a {
         color: $darkblue;
-        padding: 14px 16px;
+        padding: 16px 16px;
         text-decoration: none;
         font-size: 17px;
         &:hover {
@@ -50,9 +62,9 @@ body {
         }
       }
     }
-    .heading {
-      @include mobile-headings;
-    }
+  }
+  .heading {
+    @include mobile-headings;
   }
 }
 
