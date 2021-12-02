@@ -147,4 +147,281 @@ body {
 .footer .footerlink:hover {
   font-weight: bold;
 }
+
+.container .main .contact-flex-container {
+  width: 100%;
+  height: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.container .main .contact-flex-container .contact-img-container img {
+  width: 350px;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-img-container img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container {
+    width: 400px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #225675;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container .contact-info {
+    font-size: 16px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name {
+  width: 140px;
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  border: none;
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container .contact-form-container .contact-form #name {
+    width: 160px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email {
+  width: 150px;
+  padding: 5px;
+  border: none;
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container .contact-form-container .contact-form #email {
+    width: 170px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form select {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #225675;
+  border: none;
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container .contact-form-container .contact-form select {
+    width: 340px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container .main .contact-flex-container .contact-container .contact-form-container .contact-form #message {
+    width: 340px;
+  }
+}
+
+.container .main .contact-flex-container .contact-container .contact-submit-button {
+  padding: 5px 30px 5px 30px;
+  font-size: 16px;
+  background: #fbf9f5;
+  border: #fbf9f5;
+  border-radius: 5px;
+  color: #225675;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
