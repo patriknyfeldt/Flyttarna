@@ -13,13 +13,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.container .header .nav i {
+  font-size: 40px;
+}
+
+.container .header .nav div:first-child {
+  position: absolute;
+  left: 0px;
+  top: 20px;
 }
 
 .container .header .nav .nav-links {
@@ -63,7 +74,7 @@ body {
 
 .container .header .nav a {
   color: #225675;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -72,7 +83,7 @@ body {
   color: #e6873c;
 }
 
-.container .header .heading {
+.container .heading {
   color: #e6873c;
   font-size: 50px;
   font-weight: 400;
