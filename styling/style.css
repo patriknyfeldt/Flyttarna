@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
@@ -146,5 +147,94 @@ body {
 
 .footer .footerlink:hover {
   font-weight: bold;
+}
+
+.testimonials-heading {
+  margin: 50px auto 40px 50px;
+}
+
+.testimonials-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  height: 400px;
+}
+
+.testimonials-wrapper i {
+  font-size: 30px;
+  color: #225675;
+}
+
+.testimonials-wrapper .pil {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.testimonials-wrapper .pil button {
+  background-color: transparent;
+  border: none;
+}
+
+.testimonials-wrapper .innehåll {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials-wrapper .innehåll > * {
+  margin-bottom: 25px;
+}
+
+.testimonials-wrapper .stjärnor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials-wrapper .citat-text {
+  padding: 15px;
+}
+
+.testimonials-wrapper .star {
+  margin: auto 10px;
+}
+
+.testimonials-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials-footer p {
+  color: white;
+  margin: 20px 10px 0px 10px;
+}
+
+#current-page {
+  color: #e6873c;
 }
 /*# sourceMappingURL=style.css.map */
