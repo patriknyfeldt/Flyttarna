@@ -268,4 +268,69 @@ body {
 
 // Vidar Rehn
 
+.testimonials-heading {
+  margin: 50px auto 40px 50px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 400px;
+
+    i {
+      font-size: 30px;
+      color: $darkblue;
+    }
+
+    .pil {
+        flex-basis: 15%;
+
+        button {
+          background-color: transparent;
+          border: none;
+        }
+    }
+    
+    .innehåll {
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > * {
+          margin-bottom: 25px;
+        }
+    }
+    
+    .stjärnor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .citat-text {
+        padding: 15px;
+    }
+    
+    .star {
+        margin: auto 10px;
+    }
+}
+
+.testimonials-footer {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: white;
+    margin: 20px 10px 0px 10px;
+  }
+}
+
+#current-page {
+  color: $orange;
+}
+
 // Vidar Rehn
