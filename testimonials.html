@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c08e8e6912.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styling/style.css" />
+    <title>flyttarna</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="top-wrapper">
+          <div class="logo">
+            <a href="/about.html"> <i class="fas fa-box-open"></i> </a>
+          </div>
+          <div class="hamburger">
+            <a id="hamburger-menu" class="icon">
+              <i id="hamburger-icon" class="fa fa-bars"></i>
+              <i id="close-menu-icon" class="fas fa-times hide"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="nav" id="my-nav">
+          <a class="hide" href="/about.html">Om Oss</a>
+          <a class="hide" href="/testimonials.html" id="current-page">Referenser</a>
+          <a class="hide" href="/contact.html">Kontakt</a>
+        </nav>
+      </header>
+      <main class="main">
+        <h1 class="heading testimonials-heading">Vad tycker folk om oss?</h1>
+        <div class="testimonials-wrapper">
+            <div class="pil"><button id="left-btn"><i class="fas fa-chevron-left"></i></button></div>
+            <div class="innehåll">
+                <div class="citat-tecken"><i class="fas fa-quote-right"></i></div>
+                <p class="citat-text"></p>
+                <div class="stjärnor">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <p class="namn"></p>
+            </div>
+            <div class="pil"><button id="right-btn"><i class="fas fa-chevron-right"></i></button></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer testimonials-footer"> 
+      <a href="/home.html"  class="footerlink">Home</a><p>/</p><a href="/testimonials.html"  class="footerlink" id="current-page">Referenser</a>
+     </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
