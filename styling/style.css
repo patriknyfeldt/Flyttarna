@@ -149,6 +149,21 @@ body {
   font-weight: bold;
 }
 
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url(/background-image-mobile.png);
+}
+
+@media (min-width: 600px) {
+  .home {
+    background-image: url(/background-image-desktop.png);
+    background-position: 50% 50%;
+  }
+}
 .container.contact .main.contact .contact-flex-container {
   width: 100%;
   height: 540px;
