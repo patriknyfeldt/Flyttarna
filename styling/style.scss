@@ -78,16 +78,16 @@ body {
 }
 
 .footer {
-  position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   background: $darkblue;
 
   .footerlink {
     display: flex;
     justify-content: center;
-    color:white;
+    color: white;
     text-decoration: none;
     margin-top: 20px;
   }
@@ -98,18 +98,27 @@ body {
 
 // Patrik Nyfeldt
 
+.home {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url(/background-image-mobile.png);
+  @media (min-width: 600px) {
+    background-image: url(/background-image-desktop.png);
+    background-position: 50% 50%;
+  }
+}
+
 // Patrik Nyfeldt
 
-
 // Patrik Lundberg
 
 // Patrik Lundberg
 
-
 // Micke Roos Wahlbeck
 
 // Micke Roos Wahlbeck
-
 
 // Vidar Rehn
 
@@ -124,44 +133,44 @@ body {
   text-align: center;
   height: 400px;
 
-    i {
-      font-size: 30px;
-      color: $darkblue;
-    }
+  i {
+    font-size: 30px;
+    color: $darkblue;
+  }
 
-    .pil {
-        flex-basis: 15%;
+  .pil {
+    flex-basis: 15%;
 
-        button {
-          background-color: transparent;
-          border: none;
-        }
+    button {
+      background-color: transparent;
+      border: none;
     }
-    
-    .innehåll {
-        flex-basis: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+  }
 
-        > * {
-          margin-bottom: 25px;
-        }
+  .innehåll {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > * {
+      margin-bottom: 25px;
     }
-    
-    .stjärnor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .citat-text {
-        padding: 15px;
-    }
-    
-    .star {
-        margin: auto 10px;
-    }
+  }
+
+  .stjärnor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .citat-text {
+    padding: 15px;
+  }
+
+  .star {
+    margin: auto 10px;
+  }
 }
 
 .testimonials-footer {
