@@ -36,7 +36,7 @@ const testimonials = [{
 },{
     quote: "Vilket gäng! Allt från första kontakt var en fröjd. Vi kommer alltid rekommendera flyttarna till våra vänner i behov av städ och flytthjälp.",
     stars: "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>",
-    name: "Mohammad Al Sadi, Danderyd"
+    name: "Fatimah Al Saadi, Danderyd"
 }
 ];
 

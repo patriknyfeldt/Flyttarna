@@ -113,14 +113,16 @@ body {
 
 // Vidar Rehn
 
-
+.testimonials-heading {
+  margin: 50px auto 40px 50px;
+}
 
 .testimonials-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: 500px;
+  height: 400px;
 
     i {
       font-size: 30px;
@@ -160,6 +162,20 @@ body {
     .star {
         margin: auto 10px;
     }
+}
+
+.testimonials-footer {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: white;
+    margin: 20px 10px 0px 10px;
+  }
+}
+
+#current-page {
+  color: $orange;
 }
 
 // Vidar Rehn
