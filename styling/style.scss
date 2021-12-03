@@ -103,6 +103,161 @@ body {
 
 // Patrik Lundberg
 
+.container.contact {
+
+  .main.contact {
+
+    .contact-flex-container {
+      width: 100%;
+      height: 540px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .contact-img-container {
+        
+        img {
+          width: 350px;
+          height: 200px;
+
+          @media (min-width: 600px) {
+            width: 300px;
+            height: 400px;
+          }
+        }
+      }
+
+      .contact-container {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 600px) {
+          width: 400px;
+        }
+
+        .contact-info {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          text-align: center;
+          color: $darkblue;
+          font-size: 14px;
+          margin-top: 10px;
+
+          @media (min-width: 600px) {
+            font-size: 16px;
+          }
+        }
+
+        .contact-form-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .contact-form {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            #name {
+              width: 140px;
+              margin: 10px 10px 10px 0;
+              padding: 5px;
+              border: none;
+
+              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $darkblue;
+                opacity: 1; /* Firefox */
+              }
+
+              @media (min-width: 600px) {
+                width: 160px;
+              }
+            }
+
+            #email {
+              width: 150px;
+              padding: 5px;
+              border: none;
+
+              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $darkblue;
+                opacity: 1; /* Firefox */
+              }
+
+              @media (min-width: 600px) {
+                width: 170px;
+              }
+            }
+
+            select {
+              width: 300px;
+              margin-bottom: 10px;
+              padding: 5px;
+              color: $darkblue;
+              border: none;
+              
+              @media (min-width: 600px) {
+                width: 340px;
+              }
+            }
+
+            #message {
+              width: 300px;
+              height: 150px;
+              margin-bottom: 10px;
+              padding: 5px;
+              border: none;
+              
+              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $darkblue;
+                opacity: 1; /* Firefox */
+              }
+              
+              @media (min-width: 600px) {
+                width: 340px;
+              }
+            }
+          }
+        }
+
+        .contact-submit-button {
+          padding: 5px 30px 5px 30px;
+          font-size: 16px;
+          background: $button-color;
+          border: $button-color;
+          border-radius: 5px;
+          color: $darkblue;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 // Patrik Lundberg
 
 
