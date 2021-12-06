@@ -62,6 +62,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      cursor: pointer;
 
       @media (min-width: 600px) {
         flex-direction: row;
@@ -74,6 +75,9 @@ body {
   }
   .heading {
     @include mobile-headings;
+    @media (min-width: 600px) {
+      @include desktop-headings;
+    }
   }
 }
 
@@ -109,8 +113,11 @@ body {
     background-image: url(/background-image-desktop.png);
     background-position: 50% 30%;
   }
-  .hide-background {
-    background-image: none; //jobba vidare på den här
+  &.hide-background {
+    background-image: none;
+  }
+  .logo a {
+    color: $orange;
   }
   .main.home {
     .section.home {
@@ -123,20 +130,25 @@ body {
       align-self: flex-start;
       margin: 0 0 10% 10%;
       color: $darkblue;
+      @media (min-width: 600px) {
+        font-size: 35px;
+      }
     }
     .article.home {
       width: 80%;
-      margin-bottom: 10%;
+      margin-bottom: 8%;
       color: $turqouise;
     }
     .button.home {
-      padding: 5px 30px 5px 30px;
-      font-size: 16px;
-      background: $button-color;
-      border: $button-color;
-      border-radius: 5px;
-      color: $darkblue;
-      font-size: 18px;
+      @include button;
+      text-decoration: none;
+      margin-top: 20%;
+      padding: 5px 20px;
+      @media (min-width: 600px) {
+        margin-top: 5%;
+        margin-left: 10%;
+        align-self: flex-start;
+      }
     }
   }
 }
