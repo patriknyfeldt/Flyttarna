@@ -105,6 +105,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -123,6 +124,13 @@ body {
   color: #e6873c;
   font-size: 50px;
   font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .container .heading {
+    color: #e6873c;
+    font-size: 80px;
+  }
 }
 
 .footer {
@@ -165,8 +173,12 @@ body {
   }
 }
 
-.container.home .hide-background {
+.container.home.hide-background {
   background-image: none;
+}
+
+.container.home .logo a {
+  color: #e6873c;
 }
 
 .container.home .main.home .section.home {
@@ -190,20 +202,38 @@ body {
   color: #225675;
 }
 
+@media (min-width: 600px) {
+  .container.home .main.home .small-heading.home {
+    font-size: 35px;
+  }
+}
+
 .container.home .main.home .article.home {
   width: 80%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   color: #3d8c95;
 }
 
 .container.home .main.home .button.home {
-  padding: 5px 30px 5px 30px;
-  font-size: 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 3px;
   background: #fbf9f5;
-  border: #fbf9f5;
-  border-radius: 5px;
+  border: none;
   color: #225675;
   font-size: 18px;
+  text-decoration: none;
+  margin-top: 20%;
+  padding: 5px 20px;
+}
+
+@media (min-width: 600px) {
+  .container.home .main.home .button.home {
+    margin-top: 5%;
+    margin-left: 10%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .container.contact .main.contact {
