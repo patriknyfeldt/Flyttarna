@@ -237,6 +237,7 @@ body {
 }
 
 .container.contact .main.contact {
+  height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,22 +245,43 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media (min-width: 900px) {
+  .container.contact .main.contact {
+    height: 700px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .container.contact .main.contact .contact-heading-container {
   width: 100%;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-heading-container {
     padding-left: 30px;
-    margin-top: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -281,7 +303,7 @@ body {
           align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -301,7 +323,7 @@ body {
      object-fit: cover;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-img-container img {
     width: 300px;
     height: 400px;
@@ -325,7 +347,7 @@ body {
           align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container {
     width: 400px;
   }
@@ -333,7 +355,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container {
-    width: 500px;
+    width: 600px;
   }
 }
 
@@ -357,7 +379,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-info {
     font-size: 16px;
   }
@@ -409,34 +431,26 @@ body {
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
     width: 160px;
   }
@@ -444,7 +458,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
-    width: 180px;
+    width: 200px;
   }
 }
 
@@ -482,7 +496,7 @@ body {
   /* Firefox */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
     width: 170px;
   }
@@ -490,7 +504,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
-    width: 190px;
+    width: 210px;
   }
 }
 
@@ -502,7 +516,7 @@ body {
   border: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form select {
     width: 340px;
   }
@@ -510,7 +524,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form select {
-    width: 380px;
+    width: 420px;
   }
 }
 
@@ -523,34 +537,26 @@ body {
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message {
     width: 340px;
   }
@@ -558,7 +564,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message {
-    width: 380px;
+    width: 420px;
   }
 }
 
