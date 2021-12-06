@@ -2,9 +2,13 @@
 var hamburgerMenu = document.querySelector("#hamburger-menu");
 var hamburgerIcon = document.querySelector("#hamburger-icon");
 var toggleItems = document.querySelectorAll(".hide");
-var contaioner = document.querySelector(".container");
 var main = document.querySelector(".main");
 
+//Patrik Nyfeldt
+var container = document.querySelector(".container.home");
+//Patrik Nyfeldt
+
+console.log(container);
 
 hamburgerMenu.addEventListener('click',() => {
     toggleItems.forEach((link) => {
@@ -12,7 +16,10 @@ hamburgerMenu.addEventListener('click',() => {
     })
     main.classList.toggle("hide");
     hamburgerIcon.classList.toggle("hide");
-    contaioner.classList.toggle("hide-background");
+    
+    //Patrik Nyfeldt
+    container.classList.toggle("hide-background");
+    //Patrik Nyfeldt
 })
 
 
