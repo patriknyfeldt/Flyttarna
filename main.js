@@ -2,6 +2,7 @@
 var hamburgerMenu = document.querySelector("#hamburger-menu");
 var hamburgerIcon = document.querySelector("#hamburger-icon");
 var toggleItems = document.querySelectorAll(".hide");
+var contaioner = document.querySelector(".container");
 var main = document.querySelector(".main");
 
 
@@ -11,6 +12,7 @@ hamburgerMenu.addEventListener('click',() => {
     })
     main.classList.toggle("hide");
     hamburgerIcon.classList.toggle("hide");
+    contaioner.classList.toggle("hide-background");
 })
 
 

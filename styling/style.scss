@@ -98,15 +98,46 @@ body {
 
 // Patrik Nyfeldt
 
-.home {
+.container.home {
   height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
   background-image: url(/background-image-mobile.png);
+  background-position: 50% 10%;
   @media (min-width: 600px) {
     background-image: url(/background-image-desktop.png);
-    background-position: 50% 50%;
+    background-position: 50% 30%;
+  }
+  .hide-background {
+    background-image: none; //jobba vidare på den här
+  }
+  .main.home {
+    .section.home {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .small-heading.home {
+      align-self: flex-start;
+      margin: 0 0 10% 10%;
+      color: $darkblue;
+    }
+    .article.home {
+      width: 80%;
+      margin-bottom: 10%;
+      color: $turqouise;
+    }
+    .button.home {
+      padding: 5px 30px 5px 30px;
+      font-size: 16px;
+      background: $button-color;
+      border: $button-color;
+      border-radius: 5px;
+      color: $darkblue;
+      font-size: 18px;
+    }
   }
 }
 
@@ -115,20 +146,19 @@ body {
 // Patrik Lundberg
 
 .container.contact {
-
   .main.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    .contact-heading-container{
+    .contact-heading-container {
       width: 100%;
       height: 70px;
       @media (min-width: 600px) {
         padding-left: 30px;
         margin-top: 20px;
-      }   
+      }
     }
 
     .contact-flex-container {
@@ -146,7 +176,6 @@ body {
       }
 
       .contact-img-container {
-        
         img {
           width: 320px;
           height: 200px;
@@ -212,7 +241,8 @@ body {
               padding: 5px;
               border: none;
 
-              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
                 opacity: 1; /* Firefox */
               }
@@ -231,7 +261,8 @@ body {
               padding: 5px;
               border: none;
 
-              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
                 opacity: 1; /* Firefox */
               }
@@ -251,7 +282,7 @@ body {
               padding: 5px;
               color: $darkblue;
               border: none;
-              
+
               @media (min-width: 600px) {
                 width: 340px;
               }
@@ -267,12 +298,13 @@ body {
               margin-bottom: 10px;
               padding: 5px;
               border: none;
-              
-              &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+              &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
                 opacity: 1; /* Firefox */
               }
-              
+
               @media (min-width: 600px) {
                 width: 340px;
               }
@@ -298,12 +330,6 @@ body {
   }
 }
 
-
-
-
-
-
-
 // Patrik Lundberg
 
 // Micke Roos Wahlbeck
@@ -315,12 +341,12 @@ body {
 }
 
 #currentpage {
-  color:$orange;
+  color: $orange;
 }
 
 .main-text-and-pictures {
-  display:flex;
-  margin-top:50px;
+  display: flex;
+  margin-top: 50px;
   @media screen and (max-width: 750px) {
     flex-flow: column;
   }
@@ -328,8 +354,8 @@ body {
 
 .employee-container {
   height: 100%;
-  width:50%;
-  display:flex;
+  width: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 750px) {
@@ -338,20 +364,20 @@ body {
 }
 
 .pictures-employees {
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 500px;
-  gap:25px;
+  gap: 25px;
   width: 350px;
 }
 
-.main-text { 
-  width:50%;
+.main-text {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow:column;
+  flex-flow: column;
   gap: 20px;
   max-height: 500px;
   margin-bottom: 20px;
@@ -366,13 +392,11 @@ body {
 
 .om-oss-heading {
   margin: 0 0 40 0px;
-  color:$orange;
+  color: $orange;
   font-size: 50px;
   font-weight: 400;
   width: 65%;
-
 }
-
 
 // Micke Roos Wahlbeck
 
