@@ -3,7 +3,7 @@
   font-family: "Noto Sans", sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -24,19 +24,19 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 600px) {
   .container .header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -45,11 +45,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .header .nav {
@@ -59,11 +59,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -71,8 +71,8 @@ body {
   .container .header .nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .container .header .nav a {
     display: initial;
@@ -100,19 +100,19 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media (min-width: 600px) {
   .container .header .hamburger {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .container .header .hamburger a:first-child {
     display: none;
@@ -138,8 +138,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   text-decoration: none;
   margin-top: 20px;
@@ -172,14 +172,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid black;
 }
 
@@ -187,29 +187,21 @@ body {
   .container.contact .main.contact .contact-flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-img-container
-  img {
+.container.contact .main.contact .contact-flex-container .contact-img-container img {
   width: 350px;
   height: 200px;
 }
 
 @media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-img-container
-    img {
+  .container.contact .main.contact .contact-flex-container .contact-img-container img {
     width: 300px;
     height: 400px;
   }
@@ -217,6 +209,236 @@ body {
 
 .container.contact .main.contact .contact-flex-container .contact-container {
   width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container {
+    width: 400px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #225675;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container .contact-info {
+    font-size: 16px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
+  width: 140px;
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  border: none;
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
+    width: 160px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
+  width: 150px;
+  padding: 5px;
+  border: none;
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
+    width: 170px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form select {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #225675;
+  border: none;
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form select {
+    width: 340px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #225675;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (min-width: 600px) {
+  .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message {
+    width: 340px;
+  }
+}
+
+.container.contact .main.contact .contact-flex-container .contact-container .contact-submit-button {
+  padding: 5px 30px 5px 30px;
+  font-size: 16px;
+  background: #fbf9f5;
+  border: #fbf9f5;
+  border-radius: 5px;
+  color: #225675;
+  font-size: 18px;
 }
 
 .testimonials-heading {
@@ -228,10 +450,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   text-align: center;
   height: 400px;
 }
@@ -243,7 +465,7 @@ body {
 
 .testimonials-wrapper .pil {
   -ms-flex-preferred-size: 15%;
-  flex-basis: 15%;
+      flex-basis: 15%;
 }
 
 .testimonials-wrapper .pil button {
@@ -253,384 +475,17 @@ body {
 
 .testimonials-wrapper .innehåll {
   -ms-flex-preferred-size: 70%;
-  flex-basis: 70%;
-
+      flex-basis: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width: 600px) {
-  .container.contact .main.contact .contact-flex-container .contact-container {
-    width: 400px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-info {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  color: #225675;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-@media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-container
-    .contact-info {
-    font-size: 16px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #name {
-  width: 140px;
-  margin: 10px 10px 10px 0;
-  padding: 5px;
-  border: none;
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #name::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #name:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #name::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #name::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-@media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-container
-    .contact-form-container
-    .contact-form
-    #name {
-    width: 160px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #email {
-  width: 150px;
-  padding: 5px;
-  border: none;
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #email::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #email:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #email::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #email::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-@media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-container
-    .contact-form-container
-    .contact-form
-    #email {
-    width: 170px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  select {
-  width: 300px;
-  margin-bottom: 10px;
-  padding: 5px;
-  color: #225675;
-  border: none;
-}
-
-@media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-container
-    .contact-form-container
-    .contact-form
-    select {
-    width: 340px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #message {
-  width: 300px;
-  height: 150px;
-  margin-bottom: 10px;
-  padding: 5px;
-  border: none;
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #message::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #message:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #message::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-form-container
-  .contact-form
-  #message::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #225675;
-  opacity: 1;
-  /* Firefox */
-}
-
-@media (min-width: 600px) {
-  .container.contact
-    .main.contact
-    .contact-flex-container
-    .contact-container
-    .contact-form-container
-    .contact-form
-    #message {
-    width: 340px;
-  }
-}
-
-.container.contact
-  .main.contact
-  .contact-flex-container
-  .contact-container
-  .contact-submit-button {
-  padding: 5px 30px 5px 30px;
-  font-size: 16px;
-  background: #fbf9f5;
-  border: #fbf9f5;
-  border-radius: 5px;
-  color: #225675;
-  font-size: 18px;
-
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .testimonials-wrapper .innehåll > * {
@@ -642,11 +497,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials-wrapper .citat-text {
@@ -662,8 +517,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .testimonials-footer p {
