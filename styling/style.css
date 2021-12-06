@@ -149,19 +149,61 @@ body {
   font-weight: bold;
 }
 
-.home {
+.container.home {
   height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
   background-image: url(/background-image-mobile.png);
+  background-position: 50% 10%;
 }
 
 @media (min-width: 600px) {
-  .home {
+  .container.home {
     background-image: url(/background-image-desktop.png);
-    background-position: 50% 50%;
+    background-position: 50% 30%;
   }
+}
+
+.container.home .hide-background {
+  background-image: none;
+}
+
+.container.home .main.home .section.home {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.home .main.home .small-heading.home {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 0 10% 10%;
+  color: #225675;
+}
+
+.container.home .main.home .article.home {
+  width: 80%;
+  margin-bottom: 10%;
+  color: #3d8c95;
+}
+
+.container.home .main.home .button.home {
+  padding: 5px 30px 5px 30px;
+  font-size: 16px;
+  background: #fbf9f5;
+  border: #fbf9f5;
+  border-radius: 5px;
+  color: #225675;
+  font-size: 18px;
 }
 
 .container.contact .main.contact {
