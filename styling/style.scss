@@ -17,6 +17,9 @@ body {
 .show {
   display: initial;
 }
+.fixed {
+  position: fixed;
+}
 
 .container {
   .header {
@@ -175,6 +178,10 @@ body {
 
     .section.contact {
       @include flex(column, center, center);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .contact-heading-container {

@@ -3,6 +3,7 @@ var hamburgerMenu = document.querySelector("#hamburger-menu");
 var hamburgerIcon = document.querySelector("#hamburger-icon");
 var toggleItems = document.querySelectorAll(".hide");
 var main = document.querySelector(".main");
+var footer = document.querySelector(".footer");
 
 //Patrik Nyfeldt
 var container = document.querySelector(".container.home");
@@ -16,6 +17,7 @@ hamburgerMenu.addEventListener('click',() => {
     })
     main.classList.toggle("hide");
     hamburgerIcon.classList.toggle("hide");
+    footer.classList.toggle("fixed");
     
     //Patrik Nyfeldt
     container.classList.toggle("hide-background");
