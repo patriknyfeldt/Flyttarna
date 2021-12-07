@@ -17,6 +17,9 @@ body {
 .show {
   display: initial;
 }
+.fixed {
+  position: fixed;
+}
 
 .container {
   .header {
@@ -177,7 +180,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
     }
 
     .contact-heading-container {
