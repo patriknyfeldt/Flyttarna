@@ -170,17 +170,22 @@ body {
 
 .container.contact {
   .main.contact {
+    height: 620px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     .contact-heading-container {
       width: 100%;
       height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       @media (min-width: 600px) {
         padding-left: 30px;
-        margin-top: 20px;
+        justify-content: flex-start;
       }
     }
 
@@ -223,7 +228,7 @@ body {
         }
 
         @media (min-width: 900px) {
-          width: 500px;
+          width: 600px;
         }
 
         .contact-info {
@@ -265,9 +270,8 @@ body {
               border: none;
 
               &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
-                opacity: 1; /* Firefox */
+                opacity: 1;
               }
 
               @media (min-width: 600px) {
@@ -275,7 +279,7 @@ body {
               }
 
               @media (min-width: 900px) {
-                width: 180px;
+                width: 200px;
               }
             }
 
@@ -285,9 +289,8 @@ body {
               border: none;
 
               &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
-                opacity: 1; /* Firefox */
+                opacity: 1;
               }
 
               @media (min-width: 600px) {
@@ -295,7 +298,7 @@ body {
               }
 
               @media (min-width: 900px) {
-                width: 190px;
+                width: 210px;
               }
             }
 
@@ -311,7 +314,7 @@ body {
               }
 
               @media (min-width: 900px) {
-                width: 380px;
+                width: 420px;
               }
             }
 
@@ -323,9 +326,8 @@ body {
               border: none;
 
               &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
-                opacity: 1; /* Firefox */
+                opacity: 1;
               }
 
               @media (min-width: 600px) {
@@ -333,20 +335,15 @@ body {
               }
 
               @media (min-width: 900px) {
-                width: 380px;
+                width: 420px;
               }
             }
           }
         }
 
         .contact-submit-button {
+          @include button;
           padding: 5px 30px 5px 30px;
-          font-size: 16px;
-          background: $button-color;
-          border: $button-color;
-          border-radius: 5px;
-          color: $darkblue;
-          font-size: 18px;
         }
       }
     }

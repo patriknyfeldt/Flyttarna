@@ -268,6 +268,7 @@ body {
 }
 
 .container.contact .main.contact {
+  height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,8 +276,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -285,12 +287,23 @@ body {
 .container.contact .main.contact .contact-heading-container {
   width: 100%;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 600px) {
   .container.contact .main.contact .contact-heading-container {
     padding-left: 30px;
-    margin-top: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -364,7 +377,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container {
-    width: 500px;
+    width: 600px;
   }
 }
 
@@ -440,31 +453,23 @@ body {
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 @media (min-width: 600px) {
@@ -475,7 +480,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
-    width: 180px;
+    width: 200px;
   }
 }
 
@@ -486,31 +491,23 @@ body {
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 @media (min-width: 600px) {
@@ -521,7 +518,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
-    width: 190px;
+    width: 210px;
   }
 }
 
@@ -541,7 +538,7 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form select {
-    width: 380px;
+    width: 420px;
   }
 }
 
@@ -554,31 +551,23 @@ body {
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #225675;
   opacity: 1;
-  /* Firefox */
 }
 
 @media (min-width: 600px) {
@@ -589,18 +578,19 @@ body {
 
 @media (min-width: 900px) {
   .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #message {
-    width: 380px;
+    width: 420px;
   }
 }
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-submit-button {
-  padding: 5px 30px 5px 30px;
-  font-size: 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 3px;
   background: #fbf9f5;
-  border: #fbf9f5;
-  border-radius: 5px;
+  border: none;
   color: #225675;
   font-size: 18px;
+  padding: 5px 30px 5px 30px;
 }
 
 @media screen and (max-width: 400px) {
