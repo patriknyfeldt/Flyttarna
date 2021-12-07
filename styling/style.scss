@@ -344,8 +344,12 @@ body {
 }
 
 .contact-footer {
+  position: initial;
   display: flex;
   justify-content: center;
+  &.fixed {
+    position: fixed;
+  }
 
   p {
     color: white;
