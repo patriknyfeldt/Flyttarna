@@ -622,12 +622,13 @@ body {
   padding: 5px 30px 5px 30px;
 }
 
-<<<<<<< HEAD
 .container.contact .main.contact .contact-flex-container .contact-container .contact-submit-button:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px inset;
           box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px inset;
-=======
+}
+
 .contact-footer {
+  position: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,10 +637,13 @@ body {
           justify-content: center;
 }
 
+.contact-footer.fixed {
+  position: fixed;
+}
+
 .contact-footer p {
   color: white;
   margin: 20px 10px 0px 10px;
->>>>>>> aa55b685cbe14150e0dd176e5c8ce303b271f4f3
 }
 
 @media screen and (max-width: 400px) {
