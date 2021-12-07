@@ -174,18 +174,13 @@ body {
     height: 620px;
 
     .section.contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; 
+      @include flex(column, center, center);
     }
 
     .contact-heading-container {
       width: 100%;
       height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(row, center, center);
 
       @media (min-width: 600px) {
         padding-left: 30px;
@@ -196,10 +191,7 @@ body {
     .contact-flex-container {
       width: 100%;
       height: 540px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flex(column, center, center);
 
       @media (min-width: 600px) {
         flex-direction: row;
@@ -222,10 +214,7 @@ body {
 
       .contact-container {
         width: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
 
         @media (min-width: 600px) {
           width: 400px;
@@ -237,10 +226,7 @@ body {
 
         .contact-info {
           width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center;
+          @include flex(row, space-around, center);
           text-align: center;
           color: $darkblue;
           font-size: 14px;
@@ -253,19 +239,13 @@ body {
 
         .contact-form-container {
           width: 100%;
-          display: flex;
-          flex-direction: row;
+          @include flex(row, center, center);
           flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
 
           .contact-form {
             width: 100%;
-            display: flex;
-            flex-direction: row;
+            @include flex(row, center, center);
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
 
             #name {
               width: 140px;
