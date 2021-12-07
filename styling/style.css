@@ -18,6 +18,10 @@ body {
   display: initial;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .container .header {
   display: -webkit-box;
   display: -ms-flexbox;
