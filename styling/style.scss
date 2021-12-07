@@ -172,10 +172,13 @@ body {
 .container.contact {
   .main.contact {
     height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    .section.contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
 
     .contact-heading-container {
       width: 100%;

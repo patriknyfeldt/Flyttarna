@@ -281,6 +281,9 @@ body {
 
 .container.contact .main.contact {
   height: 620px;
+}
+
+.container.contact .main.contact .section.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
