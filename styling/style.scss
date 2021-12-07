@@ -165,11 +165,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 900px) {
-      height: 700px;
-      justify-content: space-evenly;
-    }
-
     .contact-heading-container {
       width: 100%;
       height: 70px;
@@ -177,7 +172,7 @@ body {
       justify-content: center;
       align-items: center;
 
-      @media (min-width: 700px) {
+      @media (min-width: 600px) {
         padding-left: 30px;
         justify-content: flex-start;
       }
@@ -191,7 +186,7 @@ body {
       justify-content: center;
       align-items: center;
 
-      @media (min-width: 700px) {
+      @media (min-width: 600px) {
         flex-direction: row;
         justify-content: space-evenly;
         height: 500px;
@@ -203,7 +198,7 @@ body {
           height: 200px;
           object-fit: cover;
 
-          @media (min-width: 700px) {
+          @media (min-width: 600px) {
             width: 300px;
             height: 400px;
           }
@@ -217,7 +212,7 @@ body {
         justify-content: center;
         align-items: center;
 
-        @media (min-width: 700px) {
+        @media (min-width: 600px) {
           width: 400px;
         }
 
@@ -236,7 +231,7 @@ body {
           font-size: 14px;
           margin-top: 10px;
 
-          @media (min-width: 700px) {
+          @media (min-width: 600px) {
             font-size: 16px;
           }
         }
@@ -268,7 +263,7 @@ body {
                 opacity: 1;
               }
 
-              @media (min-width: 700px) {
+              @media (min-width: 600px) {
                 width: 160px;
               }
 
@@ -283,12 +278,11 @@ body {
               border: none;
 
               &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $darkblue;
-                opacity: 1; /* Firefox */
+                opacity: 1;
               }
 
-              @media (min-width: 700px) {
+              @media (min-width: 600px) {
                 width: 170px;
               }
 
@@ -304,7 +298,7 @@ body {
               color: $darkblue;
               border: none;
 
-              @media (min-width: 700px) {
+              @media (min-width: 600px) {
                 width: 340px;
               }
 
@@ -325,7 +319,7 @@ body {
                 opacity: 1;
               }
 
-              @media (min-width: 700px) {
+              @media (min-width: 600px) {
                 width: 340px;
               }
 
@@ -337,13 +331,8 @@ body {
         }
 
         .contact-submit-button {
+          @include button;
           padding: 5px 30px 5px 30px;
-          font-size: 16px;
-          background: $button-color;
-          border: $button-color;
-          border-radius: 5px;
-          color: $darkblue;
-          font-size: 18px;
         }
       }
     }
