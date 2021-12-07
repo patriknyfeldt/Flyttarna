@@ -612,6 +612,20 @@ body {
   padding: 5px 30px 5px 30px;
 }
 
+.contact-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-footer p {
+  color: white;
+  margin: 20px 10px 0px 10px;
+}
+
 @media screen and (max-width: 400px) {
   body {
     height: 250vh;
