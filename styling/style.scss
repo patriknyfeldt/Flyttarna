@@ -20,22 +20,26 @@ body {
 
 .container {
   .header {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, initial, initial);
+    // display: flex;
+    // flex-direction: column;
     @media (min-width: 600px) {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex(row, space-between, initial);
+      // flex-direction: row;
+      // justify-content: space-between;
     }
     .top-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex(row, space-between, center);
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
     }
     .nav {
+      @include flex(column, initial, center);
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
 
       overflow: hidden;
       @media (min-width: 600px) {
@@ -59,9 +63,10 @@ body {
       font-size: 40px;
     }
     .hamburger {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+      @include flex(column, initial, flex-end);
+      // display: flex;
+      // flex-direction: column;
+      // align-items: flex-end;
       cursor: pointer;
 
       @media (min-width: 600px) {
@@ -89,8 +94,9 @@ body {
   background: $darkblue;
 
   .footerlink {
-    display: flex;
-    justify-content: center;
+    @include flex(row, center, initial);
+    // display: flex;
+    // justify-content: center;
     color: white;
     text-decoration: none;
     margin-top: 20px;
@@ -107,11 +113,15 @@ body {
   width: 100vw;
   position: relative;
   background-size: cover;
-  background-image: url(/background-image-mobile.png);
+  // background-image: url(/background-image-mobile.png);
+  background-image: url(/background-image-desktop.png);
   background-position: 50% 10%;
+  // background-position: 50% 50%;
+
   @media (min-width: 600px) {
-    background-image: url(/background-image-desktop.png);
+    // background-image: url(/background-image-desktop.png);
     background-position: 50% 30%;
+    // background-position: 50% 50%;
   }
   &.hide-background {
     background-image: none;
@@ -121,10 +131,11 @@ body {
   }
   .main.home {
     .section.home {
+      @include flex(column, initial, center);
       width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
     }
     .small-heading.home {
       align-self: flex-start;
