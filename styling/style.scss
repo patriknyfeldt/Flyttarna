@@ -348,83 +348,77 @@ body {
 
 #currentpage {
   color: $orange;
-  
 }
 .main-text-and-pictures {
   display: flex;
   margin-top: 50px;
   @media screen and (min-width: 480px) {
- 
-}
+  }
 
-.employee-container {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (min-width: 480px) {
-    width: 100%;
+  .employee-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  .pictures-employees {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    gap: 25px;
+    width: 350px;
+  }
+
+  .main-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+    max-height: 500px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+      font-size: 20%;
+    }
+  }
+
+  .about-text {
+    width: 65%;
+    @media screen and (min-width: 480px) {
+      font-size: 20%;
+    }
+  }
+
+  .om-oss-heading {
+    margin: 0 0 40 0px;
+    color: $orange;
+    font-size: 50px;
+    font-weight: 400;
+    width: 65%;
+  }
+
+  .about-footer {
+    display: flex;
+    justify-content: center;
+
+    p {
+      color: white;
+    }
+  }
+
+  a {
+    text-decoration: none;
   }
 }
-
-.pictures-employees {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-height: 500px;
-  gap: 25px;
-  width: 350px;
-}
-
-
-.main-text {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  gap: 20px;
-  max-height: 500px;
-  margin-bottom: 20px;
-  @media screen and (min-width: 480px) {
-    font-size: 20%;
-  }
-}
-
-
-.about-text {
-  width: 65%;
-  @media screen and (min-width: 480px) {
-    font-size: 20%;
-    
-  }
-}
-
-.om-oss-heading {
-  margin: 0 0 40 0px;
-  color: $orange;
-  font-size: 50px;
-  font-weight: 400;
-  width: 65%;
-}
-
-.about-footer {
-  
-  display: flex;
-  justify-content: center;
-
-  p {
-    color: white;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
 // Micke Roos Wahlbeck
 
 // Vidar Rehn
