@@ -370,7 +370,6 @@ body {
 #currentpage {
   color: $orange;
 }
-
 .main-text-and-pictures {
   display: flex;
   margin-top: 50px;
@@ -439,6 +438,9 @@ body {
   justify-content: space-around;
   text-align: center;
   height: 400px;
+  @media (min-width: 600px) {
+    margin-bottom: 80px;
+  }
 
   i {
     font-size: 30px;
@@ -487,6 +489,15 @@ body {
   p {
     color: white;
     margin: 20px 10px 0px 10px;
+  }
+}
+.testimonials-footer {
+  position: initial;
+  &.fixed {
+    position: fixed;
+  }
+  @media (min-width: 600px) {
+    position: fixed;
   }
 }
 

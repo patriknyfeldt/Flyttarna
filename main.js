@@ -8,8 +8,9 @@ hamburgerMenu.addEventListener('click',() => {
     toggleItems.forEach((link) => {
         link.classList.toggle("show");
     })
-    main.classList.toggle("hide");
     hamburgerIcon.classList.toggle("hide");
+    main.classList.toggle("hide");
+
     //Patrik
     if(hamburgerMenu.classList.contains("home")){
         var homeContainer = document.querySelector(".container.home");
@@ -22,6 +23,12 @@ hamburgerMenu.addEventListener('click',() => {
         contactFooter.classList.toggle("fixed");
     }
     //Lundberg
+    //Vidar
+    else if (hamburgerMenu.classList.contains("testimonials")){
+        var testimonialsFooter = document.querySelector(".footer.testimonials-footer");
+        testimonialsFooter.classList.toggle("fixed");
+    }
+    //Vidar
 })
 
 
