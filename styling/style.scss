@@ -17,33 +17,19 @@ body {
 .show {
   display: initial;
 }
-// Om vi inte kör fixed på footer:
-// .fixed {
-//   position: fixed;
-// }
 
 .container {
   .header {
     @include flex(column, initial, initial);
-    // display: flex;
-    // flex-direction: column;
     @media (min-width: 600px) {
       @include flex(row, space-between, initial);
-      // flex-direction: row;
-      // justify-content: space-between;
     }
     .top-wrapper {
       @include flex(row, space-between, center);
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
     }
     .nav {
       @include flex(column, initial, center);
       height: 100%;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
 
       overflow: hidden;
       @media (min-width: 600px) {
@@ -68,9 +54,6 @@ body {
     }
     .hamburger {
       @include flex(column, initial, flex-end);
-      // display: flex;
-      // flex-direction: column;
-      // align-items: flex-end;
       cursor: pointer;
 
       @media (min-width: 600px) {
@@ -100,11 +83,8 @@ body {
 
   .footerlink {
     @include flex(row, center, initial);
-    // display: flex;
-    // justify-content: center;
     color: white;
     text-decoration: none;
-    // margin-top: 20px;
   }
   .footerlink:hover {
     font-weight: bold;
@@ -118,15 +98,11 @@ body {
   width: 100vw;
   position: relative;
   background-size: cover;
-  // background-image: url(/background-image-mobile.png);
   background-image: url(/background-image-desktop.png);
   background-position: 50% 10%;
-  // background-position: 50% 50%;
 
   @media (min-width: 600px) {
-    // background-image: url(/background-image-desktop.png);
     background-position: 50% 30%;
-    // background-position: 50% 50%;
   }
   &.hide-background {
     background-image: none;
@@ -135,35 +111,50 @@ body {
     color: $orange;
   }
   .main.home {
+    .heading.home {
+      margin-left: 20px;
+      @media (min-width: 600px) {
+        margin-left: 40px;
+      }
+    }
     .section.home {
       @include flex(column, initial, center);
       width: 50%;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
     }
     .small-heading.home {
       align-self: flex-start;
-      margin: 0 0 10% 10%;
+      margin: 0 0 12% 10%;
       color: $darkblue;
       @media (min-width: 600px) {
         font-size: 35px;
+        margin-bottom: 7%;
       }
     }
-    .article.home {
-      width: 80%;
-      margin-bottom: 8%;
-      color: $turqouise;
+    .article-wrapper.home {
+      .article.home {
+        width: 80%;
+        color: $turqouise;
+        @media (min-width: 600px) {
+          width: 100%;
+          font-size: 18px;
+        }
+        &:first-of-type {
+          margin-bottom: 80px;
+          @media (min-width: 600px) {
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
     .button.home {
       @include button;
+      margin-right: 10px;
       text-decoration: none;
       margin-top: 20%;
       padding: 5px 20px;
       @media (min-width: 600px) {
+        margin-right: 25px;
         margin-top: 5%;
-        margin-left: 10%;
-        align-self: flex-start;
       }
     }
   }
