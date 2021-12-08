@@ -652,34 +652,19 @@ body {
   margin: 0 10px 0 10px;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    height: 250vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-}
-
 #currentpage {
   color: #e6873c;
 }
 
-.main-text-and-pictures {
+.main-text-and-pictures.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
 }
 
-@media screen and (max-width: 750px) {
-  .main-text-and-pictures {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
+.main-text-and-pictures.main.hide {
+  display: none;
 }
 
 .employee-container {
@@ -696,7 +681,7 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 480px) {
   .employee-container {
     width: 100%;
   }
@@ -743,14 +728,20 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 480px) {
   .main-text {
-    width: 100%;
+    font-size: 20%;
   }
 }
 
 .about-text {
   width: 65%;
+}
+
+@media screen and (min-width: 480px) {
+  .about-text {
+    font-size: 20%;
+  }
 }
 
 .om-oss-heading {
@@ -801,6 +792,10 @@ a {
   }
 }
 
+.testimonials-wrapper p {
+  color: #3d8c95;
+}
+
 .testimonials-wrapper i {
   font-size: 30px;
   color: #225675;
@@ -814,6 +809,10 @@ a {
 .testimonials-wrapper .pil button {
   background-color: transparent;
   border: none;
+}
+
+.testimonials-wrapper .pil buttonhover {
+  cursor: pointer;
 }
 
 .testimonials-wrapper .innehåll {
