@@ -97,3 +97,15 @@ leftButton.addEventListener("click", previousQuote);
 setInterval(nextQuote, 6000)
 
 // Vidar Rehn
+
+// Patrik Lundberg
+let contactSubmitButton = document.querySelector("#contactSubmit");
+
+contactSubmitButton.addEventListener("click",() => {
+    alert("Tack för meddelandet, vi återkommer så snabbt vi kan.");
+});
+
+
+
+
+// Patrik Lundberg
