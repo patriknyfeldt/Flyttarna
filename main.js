@@ -3,21 +3,19 @@ var hamburgerIcon = document.querySelector("#hamburger-icon");
 var toggleItems = document.querySelectorAll(".hide");
 var main = document.querySelector(".main");
 
-// var homeContainer = document.querySelector(".container.home");
-// var contactFooter = document.querySelector(".footer.contact-footer");
 
-// Om vi inte kör fixed på footer:
-// var footer = document.querySelector(".footer");
 hamburgerMenu.addEventListener('click',() => {
     toggleItems.forEach((link) => {
         link.classList.toggle("show");
     })
     main.classList.toggle("hide");
     hamburgerIcon.classList.toggle("hide");
+    //Patrik
     if(hamburgerMenu.classList.contains("home")){
         var homeContainer = document.querySelector(".container.home");
         homeContainer.classList.toggle("hide-background");
     }
+    //Patrik
     //Lundberg
     else if(hamburgerMenu.classList.contains("contact")){
         var contactFooter = document.querySelector(".footer.contact-footer");
