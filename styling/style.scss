@@ -434,6 +434,10 @@ body {
     margin-bottom: 80px;
   }
 
+  p {
+    color: $turqouise;
+  }
+
   i {
     font-size: 30px;
     color: $darkblue;
@@ -445,6 +449,9 @@ body {
     button {
       background-color: transparent;
       border: none;
+      &hover {
+        cursor: pointer;
+      }
     }
   }
 
