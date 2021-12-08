@@ -329,7 +329,7 @@ body {
 
 @media (min-width: 600px) {
   .container.contact .main.contact .contact-heading-container {
-    padding-left: 30px;
+    margin-left: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -378,6 +378,7 @@ body {
   .container.contact .main.contact .contact-flex-container .contact-img-container img {
     width: 300px;
     height: 400px;
+    margin-right: 20px;
   }
 }
 
@@ -477,7 +478,7 @@ body {
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #name {
   width: 140px;
   margin: 10px 10px 10px 0;
-  padding: 5px;
+  padding: 5px 5px 5px 9px;
   border: none;
 }
 
@@ -515,7 +516,7 @@ body {
 
 .container.contact .main.contact .contact-flex-container .contact-container .contact-form-container .contact-form #email {
   width: 150px;
-  padding: 5px;
+  padding: 5px 5px 5px 9px;
   border: none;
 }
 
@@ -575,7 +576,7 @@ body {
   width: 300px;
   height: 150px;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 5px 5px 125px 9px;
   border: none;
 }
 
@@ -644,7 +645,7 @@ body {
 
 .contact-footer p {
   color: white;
-  margin: 20px 10px 0px 10px;
+  margin: 0 10px 0 10px;
 }
 
 @media screen and (max-width: 400px) {
