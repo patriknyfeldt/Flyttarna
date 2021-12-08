@@ -104,13 +104,23 @@ if(hamburgerMenu.classList.contains("testimonials")){
 // Vidar Rehn
 
 // Patrik Lundberg
+
 let contactSubmitButton = document.querySelector("#contactSubmit");
+let messageInput = document.querySelector("#message");
+let nameInput = document.querySelector("#name");
+let emailInput = document.querySelector("#email");
+let dropDownInput = document.querySelector("#topics");
 
 contactSubmitButton.addEventListener("click",() => {
-    alert("Tack för meddelandet, vi återkommer så snabbt vi kan.");
+    if (messageInput.value === "") {
+        alert("Vänligen fyll i ert meddelande.");
+    } else {
+        alert("Tack för meddelandet, vi återkommer så snabbt vi kan.");
+        messageInput.value = "";
+        nameInput.value = "";
+        emailInput.value = "";
+        dropDownInput.value = "";
+    }
 });
-
-
-
 
 // Patrik Lundberg
