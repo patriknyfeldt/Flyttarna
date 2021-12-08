@@ -652,9 +652,13 @@ body {
   margin: 0 10px 0 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 600px) {
   body {
     height: 250vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
 }
 
@@ -708,6 +712,12 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-height: 500px;
   gap: 25px;
   width: 350px;
@@ -749,6 +759,23 @@ body {
   font-size: 50px;
   font-weight: 400;
   width: 65%;
+}
+
+.about-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-footer p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .testimonials-heading {

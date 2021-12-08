@@ -344,21 +344,17 @@ body {
 
 // Micke Roos Wahlbeck
 
-body {
-  @media screen and (max-width: 400px) {
-    height: 250vh;
-  }
-}
+//testing
 
 #currentpage {
   color: $orange;
+  
 }
 .main-text-and-pictures {
   display: flex;
   margin-top: 50px;
-  @media screen and (max-width: 750px) {
-    flex-flow: column;
-  }
+  @media screen and (min-width: 480px) {
+ 
 }
 
 .employee-container {
@@ -367,7 +363,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 750px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
   }
 }
@@ -376,10 +372,13 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-height: 500px;
   gap: 25px;
   width: 350px;
 }
+
 
 .main-text {
   width: 50%;
@@ -390,13 +389,18 @@ body {
   gap: 20px;
   max-height: 500px;
   margin-bottom: 20px;
-  @media screen and (max-width: 750px) {
-    width: 100%;
+  @media screen and (min-width: 480px) {
+    font-size: 20%;
   }
 }
 
+
 .about-text {
   width: 65%;
+  @media screen and (min-width: 480px) {
+    font-size: 20%;
+    
+  }
 }
 
 .om-oss-heading {
@@ -405,6 +409,20 @@ body {
   font-size: 50px;
   font-weight: 400;
   width: 65%;
+}
+
+.about-footer {
+  
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: white;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 // Micke Roos Wahlbeck
