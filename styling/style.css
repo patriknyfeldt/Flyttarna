@@ -151,7 +151,7 @@ body {
 @media (min-width: 600px) {
   .container .heading {
     color: #e6873c;
-    font-size: 70px;
+    font-size: 60px;
     margin-left: 40px;
   }
 }
@@ -764,6 +764,12 @@ body {
   height: 400px;
 }
 
+@media (min-width: 600px) {
+  .testimonials-wrapper {
+    margin-bottom: 80px;
+  }
+}
+
 .testimonials-wrapper i {
   font-size: 30px;
   color: #225675;
@@ -830,6 +836,20 @@ body {
 .testimonials-footer p {
   color: white;
   margin: 20px 10px 0px 10px;
+}
+
+.testimonials-footer {
+  position: initial;
+}
+
+.testimonials-footer.fixed {
+  position: fixed;
+}
+
+@media (min-width: 600px) {
+  .testimonials-footer {
+    position: fixed;
+  }
 }
 
 #current-page {
