@@ -151,7 +151,8 @@ body {
 @media (min-width: 600px) {
   .container .heading {
     color: #e6873c;
-    font-size: 80px;
+    font-size: 70px;
+    margin-left: 40px;
   }
 }
 
