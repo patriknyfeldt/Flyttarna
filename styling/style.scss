@@ -168,14 +168,6 @@ body {
   .main.contact {
     height: 620px;
 
-    .section.contact {
-      @include flex(column, center, center);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
     .contact-heading-container {
       width: 100%;
       height: 70px;
@@ -240,7 +232,6 @@ body {
         .contact-form-container {
           width: 100%;
           @include flex(row, center, center);
-          flex-wrap: wrap;
 
           .contact-form {
             width: 100%;
@@ -434,6 +425,10 @@ body {
     margin-bottom: 80px;
   }
 
+  p {
+    color: $turqouise;
+  }
+
   i {
     font-size: 30px;
     color: $darkblue;
@@ -445,6 +440,9 @@ body {
     button {
       background-color: transparent;
       border: none;
+      &hover {
+        cursor: pointer;
+      }
     }
   }
 
