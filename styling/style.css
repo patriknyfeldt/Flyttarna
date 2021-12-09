@@ -660,11 +660,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 50px;
 }
 
 .main-text-and-pictures.main.hide {
   display: none;
+}
+
+@media (min-width: 600px) {
+  .main-text-and-pictures.main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .employee-container {
@@ -681,13 +694,13 @@ body {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 600px) {
   .employee-container {
-    width: 100%;
+    width: 40%;
   }
 }
 
-.main-text-and-pictures .pictures-employees {
+.pictures-employees {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,13 +721,7 @@ body {
   width: 350px;
 }
 
-@media (max-width: 480px) {
-  .main-text-and-pictures .pictures-employees {
-    float: left;
-  }
-}
-
-.main-text-and-pictures .main-text {
+.main-text {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,27 +737,36 @@ body {
       -ms-flex-flow: column;
           flex-flow: column;
   gap: 20px;
-  max-height: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 600px) {
   .main-text {
-    font-size: 20%;
+    font-size: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.main-text-and-pictures .about-text {
-  width: 65%;
+.about-text {
+  font-size: 15px;
+  width: 70%;
 }
 
-@media (min-width: 480px) {
-  .main-text-and-pictures .about-text {
-    font-size: 60%;
+@media (min-width: 600px) {
+  .about-text {
+    width: 50%;
   }
 }
 
-.main-text-and-pictures .om-oss-heading {
+.om-oss-heading {
   margin: 0 0 40 0px;
   color: #e6873c;
   font-size: 50px;
@@ -758,8 +774,7 @@ body {
   width: 65%;
 }
 
-.main-text-and-pictures .about-footer {
-  position: initial;
+.about-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,11 +783,7 @@ body {
           justify-content: center;
 }
 
-.main-text-and-pictures .about-footer.fixed {
-  position: fixed;
-}
-
-.main-text-and-pictures .about-footer p {
+.about-footer p {
   color: white;
 }
 
