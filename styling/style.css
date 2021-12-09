@@ -326,10 +326,6 @@ body {
   position: fixed;
 }
 
-.container.contact {
-  overflow-x: hidden;
-}
-
 .container.contact .main.contact {
   height: 620px;
 }
