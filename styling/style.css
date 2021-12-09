@@ -18,6 +18,10 @@ body {
   display: initial;
 }
 
+.container {
+  height: 100vh;
+}
+
 .container .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,12 +279,20 @@ body {
 }
 
 .container.home .main.home .article-wrapper.home .article.home:first-of-type {
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 600px) {
   .container.home .main.home .article-wrapper.home .article.home:first-of-type {
+    margin-top: initial;
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container.home .main.home .article-wrapper.home .article.home:first-of-type {
+    margin-bottom: initial;
   }
 }
 
@@ -312,6 +324,10 @@ body {
 
 .footer.home {
   position: fixed;
+}
+
+.container.contact {
+  overflow-x: hidden;
 }
 
 .container.contact .main.contact {

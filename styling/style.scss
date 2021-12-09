@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+  height: 100vh;
   .header {
     @include flex(column, initial, initial);
     @media (min-width: 600px) {
@@ -139,9 +140,15 @@ body {
           font-size: 18px;
         }
         &:first-of-type {
-          margin-bottom: 80px;
+          margin-top: 20px;
+          margin-bottom: 60px;
           @media (min-width: 600px) {
+            margin-top: initial;
             margin-bottom: 40px;
+          }
+          @media (min-width: 800px) {
+            // margin-top: initial;
+            margin-bottom: initial;
           }
         }
       }
@@ -168,6 +175,7 @@ body {
 // Patrik Lundberg
 
 .container.contact {
+  overflow-x: hidden;
   .main.contact {
     height: 620px;
 
@@ -355,13 +363,12 @@ body {
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 100px;
-  
+
   &.hide {
-    
     display: none;
   }
   @media (min-width: 600px) {
-    flex-direction:row;
+    flex-direction: row;
     margin-left: 20px;
   }
 }
@@ -372,7 +379,7 @@ body {
   justify-content: center;
   align-items: center;
   @media (min-width: 600px) {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -388,11 +395,9 @@ body {
   @media (min-width: 600px) {
     margin-bottom: 20px;
   }
-  
 }
 
 .main-text {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,8 +416,7 @@ body {
   font-size: 15px;
   width: 70%;
   @media (min-width: 600px) {
-    width:50%;
-    
+    width: 50%;
   }
 }
 
@@ -421,7 +425,6 @@ body {
   color: $orange;
   font-size: 50px;
   font-weight: 400;
- 
 }
 
 .footer.about-footer {
