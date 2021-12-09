@@ -667,6 +667,10 @@ body {
   margin: 0 10px 0 10px;
 }
 
+.container.about {
+  height: initial;
+}
+
 #currentpage {
   color: #e6873c;
 }

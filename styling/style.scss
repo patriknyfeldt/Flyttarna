@@ -353,7 +353,9 @@ body {
 // Patrik Lundberg
 
 // Micke Roos Wahlbeck
-
+.container.about {
+  height: initial;
+}
 #currentpage {
   color: $orange;
 }
