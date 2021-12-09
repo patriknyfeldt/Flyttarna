@@ -347,13 +347,16 @@ body {
 
 #currentpage {
   color: $orange;
-  
 }
-.main-text-and-pictures {
+.main-text-and-pictures.main {
   display: flex;
   margin-top: 50px;
- 
-
+  &.hide {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+  }
+}
 .employee-container {
   height: 100%;
   width: 50%;
@@ -379,7 +382,6 @@ body {
   }
 }
 
-
 .main-text {
   width: 50%;
   display: flex;
@@ -393,7 +395,6 @@ body {
     font-size: 20%;
   }
 }
-
 
 .about-text {
   width: 65%;
@@ -424,7 +425,7 @@ body {
       
     }
   }
-}
+
 
 a {
   text-decoration: none;
