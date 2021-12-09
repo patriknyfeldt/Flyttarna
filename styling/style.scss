@@ -355,21 +355,25 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  margin-bottom: 100px;
+  
   &.hide {
+    
     display: none;
   }
   @media (min-width: 600px) {
-    flex-direction: row;
+    flex-direction:row;
+    margin-left: 20px;
   }
 }
 .employee-container {
   height: 100%;
-  width: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 480px) {
-    width: 100%;
+  @media (min-width: 600px) {
+    width: 100%
   }
 }
 
@@ -382,29 +386,34 @@ body {
   max-height: 500px;
   gap: 25px;
   width: 350px;
-  @media (max-width: 480px) {
-    float: left;
+  @media (min-width: 600px) {
+    margin-bottom: 20px;
   }
+  
 }
 
 .main-text {
-  width: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   gap: 20px;
-  max-height: 500px;
-  margin-bottom: 20px;
-  @media (max-width: 480px) {
-    font-size: 20%;
+  margin-bottom: 35px;
+  @media (min-width: 600px) {
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .about-text {
-  width: 65%;
-  @media (min-width: 480px) {
-    font-size: 60%;
+  font-size: 15px;
+  width: 70%;
+  @media (min-width: 600px) {
+    width:50%;
+    
   }
 }
 
@@ -413,7 +422,7 @@ body {
   color: $orange;
   font-size: 50px;
   font-weight: 400;
-  width: 65%;
+ 
 }
 
 .footer.about-footer {
