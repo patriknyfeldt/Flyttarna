@@ -74,7 +74,6 @@ body {
 }
 
 .footer {
-  // position: fixed;
   @include flex(row, center, center);
   bottom: 0;
   width: 100%;
@@ -168,6 +167,8 @@ body {
 // Patrik Lundberg
 
 .container.contact {
+  overflow-x: hidden;
+
   .main.contact {
     height: 620px;
 
