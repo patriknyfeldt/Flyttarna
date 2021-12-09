@@ -23,6 +23,10 @@ hamburgerMenu.addEventListener('click',() => {
         contactFooter.classList.toggle("fixed");
     }
     //Lundberg
+    else if(hamburgerMenu.classList.contains("about")){
+        var aboutFooter = document.querySelector(".footer.about-footer");
+        aboutFooter.classList.toggle("fixed");
+    }
     //Vidar
     else if (hamburgerMenu.classList.contains("testimonials")){
         var testimonialsFooter = document.querySelector(".footer.testimonials-footer");
@@ -104,7 +108,7 @@ if(hamburgerMenu.classList.contains("testimonials")){
 // Vidar Rehn
 
 // Patrik Lundberg
-
+if(hamburgerMenu.classList.contains("contact")){
 let contactSubmitButton = document.querySelector("#contactSubmit");
 let messageInput = document.querySelector("#message");
 let nameInput = document.querySelector("#name");
@@ -122,5 +126,5 @@ contactSubmitButton.addEventListener("click",() => {
         dropDownInput.value = "";
     }
 });
-
+}
 // Patrik Lundberg

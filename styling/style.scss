@@ -74,7 +74,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  // position: fixed;
   @include flex(row, center, center);
   bottom: 0;
   width: 100%;
@@ -158,6 +158,9 @@ body {
       }
     }
   }
+}
+.footer.home {
+  position: fixed;
 }
 
 // Patrik Nyfeldt
@@ -326,11 +329,12 @@ body {
   }
 }
 
-.contact-footer {
-  position: initial;
-  display: flex;
-  justify-content: center;
+.footer.contact-footer {
+  width: 100vw;
   &.fixed {
+    position: fixed;
+  }
+  @media (min-width: 600px) {
     position: fixed;
   }
 
@@ -343,7 +347,6 @@ body {
 // Patrik Lundberg
 
 // Micke Roos Wahlbeck
-
 
 #currentpage {
   color: $orange;
@@ -422,23 +425,21 @@ body {
  
 }
 
-.about-footer {
-  
-    display: flex;
-    justify-content: center;
-    
-    p {
-      color: white;
-      
-    }
+.footer.about-footer {
+  &.fixed {
+    position: fixed;
   }
-
+  @media (min-width: 600px) {
+    position: fixed;
+  }
+  p {
+    color: white;
+  }
+}
 
 a {
   text-decoration: none;
 }
-
-
 
 // Micke Roos Wahlbeck
 
@@ -506,16 +507,10 @@ a {
 }
 
 .testimonials-footer {
-  display: flex;
-  justify-content: center;
-
   p {
     color: white;
     margin: 20px 10px 0px 10px;
   }
-}
-.testimonials-footer {
-  position: initial;
   &.fixed {
     position: fixed;
   }
