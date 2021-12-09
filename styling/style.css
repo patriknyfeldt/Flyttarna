@@ -665,6 +665,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .main-text-and-pictures.main.hide {
@@ -677,12 +678,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 20px;
   }
 }
 
 .employee-container {
   height: 100%;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,7 +697,7 @@ body {
 
 @media (min-width: 600px) {
   .employee-container {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -721,8 +722,13 @@ body {
   width: 350px;
 }
 
+@media (min-width: 600px) {
+  .pictures-employees {
+    margin-bottom: 20px;
+  }
+}
+
 .main-text {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,7 +777,6 @@ body {
   color: #e6873c;
   font-size: 50px;
   font-weight: 400;
-  width: 65%;
 }
 
 .about-footer {
