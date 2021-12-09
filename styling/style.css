@@ -652,16 +652,6 @@ body {
   margin: 0 10px 0 10px;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    height: 250vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-}
-
 #currentpage {
   color: #e6873c;
 }
@@ -673,16 +663,7 @@ body {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 750px) {
-  .main-text-and-pictures {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-}
-
-.employee-container {
+.main-text-and-pictures .employee-container {
   height: 100%;
   width: 50%;
   display: -webkit-box;
@@ -696,13 +677,13 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 750px) {
-  .employee-container {
+@media screen and (min-width: 480px) {
+  .main-text-and-pictures .employee-container {
     width: 100%;
   }
 }
 
-.pictures-employees {
+.main-text-and-pictures .pictures-employees {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,7 +704,7 @@ body {
   width: 350px;
 }
 
-.main-text {
+.main-text-and-pictures .main-text {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,17 +724,23 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 750px) {
-  .main-text {
-    width: 100%;
+@media screen and (min-width: 480px) {
+  .main-text-and-pictures .main-text {
+    font-size: 20%;
   }
 }
 
-.about-text {
+.main-text-and-pictures .about-text {
   width: 65%;
 }
 
-.om-oss-heading {
+@media screen and (min-width: 480px) {
+  .main-text-and-pictures .about-text {
+    font-size: 20%;
+  }
+}
+
+.main-text-and-pictures .om-oss-heading {
   margin: 0 0 40 0px;
   color: #e6873c;
   font-size: 50px;
@@ -761,7 +748,7 @@ body {
   width: 65%;
 }
 
-.about-footer {
+.main-text-and-pictures .about-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,11 +757,11 @@ body {
           justify-content: center;
 }
 
-.about-footer p {
+.main-text-and-pictures .about-footer p {
   color: white;
 }
 
-a {
+.main-text-and-pictures a {
   text-decoration: none;
 }
 
@@ -801,6 +788,10 @@ a {
   }
 }
 
+.testimonials-wrapper p {
+  color: #3d8c95;
+}
+
 .testimonials-wrapper i {
   font-size: 30px;
   color: #225675;
@@ -814,6 +805,10 @@ a {
 .testimonials-wrapper .pil button {
   background-color: transparent;
   border: none;
+}
+
+.testimonials-wrapper .pil buttonhover {
+  cursor: pointer;
 }
 
 .testimonials-wrapper .innehåll {
