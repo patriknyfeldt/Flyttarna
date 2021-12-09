@@ -314,6 +314,10 @@ body {
   position: fixed;
 }
 
+.container.contact {
+  overflow-x: hidden;
+}
+
 .container.contact .main.contact {
   height: 620px;
 }
@@ -700,7 +704,7 @@ body {
   }
 }
 
-.main-text-and-pictures .pictures-employees {
+.pictures-employees {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,13 +775,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .main-text-and-pictures .about-text {
-    font-size: 20%;
-  }
-}
-
-.main-text-and-pictures .om-oss-heading {
+.om-oss-heading {
   margin: 0 0 40 0px;
   color: #e6873c;
   font-size: 50px;
@@ -798,7 +796,7 @@ body {
   color: white;
 }
 
-.main-text-and-pictures a {
+a {
   text-decoration: none;
 }
 
