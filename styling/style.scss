@@ -74,7 +74,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  // position: fixed;
   @include flex(row, center, center);
   bottom: 0;
   width: 100%;
@@ -158,6 +158,9 @@ body {
       }
     }
   }
+}
+.footer.home {
+  position: fixed;
 }
 
 // Patrik Nyfeldt
@@ -326,11 +329,12 @@ body {
   }
 }
 
-.contact-footer {
-  position: initial;
-  display: flex;
-  justify-content: center;
+.footer.contact-footer {
+  width: 100vw;
   &.fixed {
+    position: fixed;
+  }
+  @media (min-width: 600px) {
     position: fixed;
   }
 
@@ -344,17 +348,18 @@ body {
 
 // Micke Roos Wahlbeck
 
-
 #currentpage {
   color: $orange;
 }
 .main-text-and-pictures.main {
   display: flex;
+  flex-direction: column;
   margin-top: 50px;
   &.hide {
     display: none;
   }
-  @media screen and (min-width: 480px) {
+  @media (min-width: 600px) {
+    flex-direction: row;
   }
 }
 .employee-container {
@@ -378,7 +383,7 @@ body {
   gap: 25px;
   width: 350px;
   @media (max-width: 480px) {
-    float:left;
+    float: left;
   }
 }
 
@@ -400,7 +405,6 @@ body {
   width: 65%;
   @media (min-width: 480px) {
     font-size: 60%;
-    
   }
 }
 
@@ -412,26 +416,21 @@ body {
   width: 65%;
 }
 
-.about-footer {
-    position: initial;
-    display: flex;
-    justify-content: center;
-    &.fixed {
-      position: fixed;
-    }
-  
-    p {
-      color: white;
-      
-    }
+.footer.about-footer {
+  &.fixed {
+    position: fixed;
   }
-
+  @media (min-width: 600px) {
+    position: fixed;
+  }
+  p {
+    color: white;
+  }
+}
 
 a {
   text-decoration: none;
 }
-
-
 
 // Micke Roos Wahlbeck
 
@@ -499,16 +498,10 @@ a {
 }
 
 .testimonials-footer {
-  display: flex;
-  justify-content: center;
-
   p {
     color: white;
     margin: 20px 10px 0px 10px;
   }
-}
-.testimonials-footer {
-  position: initial;
   &.fixed {
     position: fixed;
   }
