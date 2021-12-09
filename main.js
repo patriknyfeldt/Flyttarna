@@ -1,3 +1,4 @@
+//Patrik Nyfeldt
 var hamburgerMenu = document.querySelector("#hamburger-menu");
 var hamburgerIcon = document.querySelector("#hamburger-icon");
 var toggleItems = document.querySelectorAll(".hide");
@@ -11,29 +12,32 @@ hamburgerMenu.addEventListener('click',() => {
     hamburgerIcon.classList.toggle("hide");
     main.classList.toggle("hide");
 
-    //Patrik
+    //Home
     if(hamburgerMenu.classList.contains("home")){
         var homeContainer = document.querySelector(".container.home");
         homeContainer.classList.toggle("hide-background");
     }
-    //Patrik
-    //Lundberg
+    //Home
+    //Contact
     else if(hamburgerMenu.classList.contains("contact")){
         var contactFooter = document.querySelector(".footer.contact-footer");
         contactFooter.classList.toggle("fixed");
     }
-    //Lundberg
+    //contact
+    //About
     else if(hamburgerMenu.classList.contains("about")){
         var aboutFooter = document.querySelector(".footer.about-footer");
         aboutFooter.classList.toggle("fixed");
     }
-    //Vidar
+    //About
+    //Testimonials
     else if (hamburgerMenu.classList.contains("testimonials")){
         var testimonialsFooter = document.querySelector(".footer.testimonials-footer");
         testimonialsFooter.classList.toggle("fixed");
     }
-    //Vidar
+    //Testimonials
 })
+//Patrik Nyfeldt
 
 
 // Vidar Rehn
