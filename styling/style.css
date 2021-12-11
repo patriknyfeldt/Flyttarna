@@ -266,32 +266,32 @@ body {
   }
 }
 
-.container.home .main.home .article-wrapper.home .article.home {
+.container.home .main.home .article.home .text-wrapper.home {
   width: 80%;
   color: #3d8c95;
 }
 
 @media (min-width: 600px) {
-  .container.home .main.home .article-wrapper.home .article.home {
+  .container.home .main.home .article.home .text-wrapper.home {
     width: 100%;
     font-size: 18px;
   }
 }
 
-.container.home .main.home .article-wrapper.home .article.home:first-of-type {
+.container.home .main.home .article.home .text-wrapper.home:first-of-type {
   margin-top: 20px;
   margin-bottom: 60px;
 }
 
 @media (min-width: 600px) {
-  .container.home .main.home .article-wrapper.home .article.home:first-of-type {
+  .container.home .main.home .article.home .text-wrapper.home:first-of-type {
     margin-top: initial;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 800px) {
-  .container.home .main.home .article-wrapper.home .article.home:first-of-type {
+  .container.home .main.home .article.home .text-wrapper.home:first-of-type {
     margin-bottom: initial;
   }
 }
