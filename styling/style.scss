@@ -130,8 +130,8 @@ body {
         margin-bottom: 7%;
       }
     }
-    .article-wrapper.home {
-      .article.home {
+    .article.home {
+      .text-wrapper.home {
         width: 80%;
         color: $turqouise;
         @media (min-width: 600px) {
