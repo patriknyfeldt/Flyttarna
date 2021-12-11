@@ -858,8 +858,12 @@ a {
   border: none;
 }
 
-.testimonials-wrapper .pil buttonhover {
+.testimonials-wrapper .pil button:hover {
   cursor: pointer;
+}
+
+.testimonials-wrapper .pil button:hover i:hover {
+  color: #e6873c;
 }
 
 .testimonials-wrapper .innehåll {
@@ -901,9 +905,18 @@ a {
   margin: auto 10px;
 }
 
+.testimonials-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .testimonials-footer p {
   color: white;
-  margin: 20px 10px 0px 10px;
+  margin: 0px 10px;
 }
 
 .testimonials-footer.fixed {

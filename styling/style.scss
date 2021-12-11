@@ -477,8 +477,12 @@ a {
     button {
       background-color: transparent;
       border: none;
-      &hover {
+      &:hover {
         cursor: pointer;
+
+        i:hover {
+          color: $orange;
+        }
       }
     }
   }
@@ -510,9 +514,11 @@ a {
 }
 
 .testimonials-footer {
+  display: flex;
+  align-items: center;
   p {
     color: white;
-    margin: 20px 10px 0px 10px;
+    margin: 0px 10px;
   }
   &.fixed {
     position: fixed;
