@@ -353,6 +353,14 @@ body {
 // Patrik Lundberg
 
 // Micke Roos Wahlbeck
+
+.om-oss-heading {
+  margin: 0px 60px 20px 0px;
+  color: $orange;
+  font-size: 60px;
+  font-weight: 400;
+}
+
 .container.about {
   height: initial;
 }
@@ -362,25 +370,34 @@ body {
 .main-text-and-pictures.main {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  padding:30px 30px 30px 100px;
+  @media (max-width: 700px) {
+    padding:15px;
+  }
 
+  @media (max-width: 1000px) {
+  padding: 20px;
+  }
+  @media (max-width: 850px) {
+  padding: 10px;
+  }
   &.hide {
     display: none;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     flex-direction: row;
     margin-left: 20px;
   }
 }
 .employee-container {
   height: 100%;
-
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  @media (min-width: 600px) {
+  width:50%;
+  @media (max-width: 700px) {
     width: 100%;
+    justify-content: center;
   }
 }
 
@@ -390,49 +407,49 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-height: 500px;
+  max-height: 600px;
   gap: 25px;
-  width: 350px;
-  @media (min-width: 600px) {
-    margin-bottom: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+  @media (max-width: 700px) {
+    margin-top: 20px;
   }
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-text {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column;
-  gap: 20px;
-  margin-bottom: 35px;
-  @media (min-width: 600px) {
+  max-width: 50%;
+  @media (max-width: 850px) {
     font-size: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
   }
 }
 
 .about-text {
   font-size: 15px;
-  width: 70%;
-  @media (min-width: 600px) {
+  @media (min-width: 1000px) {
     width: 50%;
   }
 }
 
-.om-oss-heading {
-  margin: 0 0 40 0px;
-  color: $orange;
-  font-size: 50px;
-  font-weight: 400;
-}
 
 .footer.about-footer {
   &.fixed {
     position: fixed;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     position: fixed;
   }
   p {
