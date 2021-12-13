@@ -81,9 +81,18 @@ body {
   height: 60px;
   background: $darkblue;
 
+  nav {
+    width: 300px;
+    @include flex(row, space-between, center);
+
+    .current-page {
+      text-decoration: underline;
+    }
+  }
+
   .footerlink {
     @include flex(row, center, initial);
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   .footerlink:hover {
@@ -542,9 +551,6 @@ a {
   }
   @media (min-width: 600px) {
     position: fixed;
-  }
-  .current-page {
-    color: $orange;
   }
 }
 
