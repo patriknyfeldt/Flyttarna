@@ -543,6 +543,9 @@ a {
   @media (min-width: 600px) {
     position: fixed;
   }
+  .current-page {
+    color: $orange;
+  }
 }
 
 #current-page {

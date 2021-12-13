@@ -963,6 +963,10 @@ a {
   }
 }
 
+.testimonials-footer .current-page {
+  color: #e6873c;
+}
+
 #current-page {
   color: #e6873c;
 }
