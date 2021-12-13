@@ -351,11 +351,6 @@ body {
   @media (min-width: 600px) {
     position: fixed;
   }
-
-  p {
-    color: white;
-    margin: 0 10px 0 10px;
-  }
 }
 
 // Patrik Lundberg
@@ -399,9 +394,7 @@ body {
 }
 .employee-container {
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex(row, flex-start, center);
   width: 50%;
   @media (max-width: 700px) {
     width: 100%;
@@ -410,11 +403,8 @@ body {
 }
 
 .pictures-employees {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, center, center);
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   max-height: 600px;
   gap: 25px;
   width: 400px;
@@ -425,28 +415,30 @@ body {
 }
 
 .employee {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include flex(column, flex-start, center);
+}
+
+h3 {
+  color: $darkblue;
+}
+
+.företagsroll {
+  color: $turqouise;
 }
 
 .main-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: column;
+  @include flex(column, flex-start, center);
   max-width: 50%;
   @media (max-width: 850px) {
     font-size: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
     max-width: 100%;
   }
 }
 
 .about-text {
   font-size: 15px;
+  color: $darkblue;
   @media (min-width: 1000px) {
     width: 50%;
   }
@@ -477,9 +469,7 @@ a {
 }
 
 .testimonials-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include flex(row, space-around, center);
   text-align: center;
   height: 400px;
   @media (min-width: 600px) {
@@ -513,9 +503,7 @@ a {
 
   .innehåll {
     flex-basis: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between, initial);
 
     > * {
       margin-bottom: 25px;
@@ -523,9 +511,7 @@ a {
   }
 
   .stjärnor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
   }
 
   .citat-text {
@@ -538,22 +524,12 @@ a {
 }
 
 .testimonials-footer {
-  display: flex;
-  align-items: center;
-  p {
-    color: white;
-    margin: 0px 10px;
-  }
   &.fixed {
     position: fixed;
   }
   @media (min-width: 600px) {
     position: fixed;
   }
-}
-
-#current-page {
-  color: $orange;
 }
 
 // Vidar Rehn
