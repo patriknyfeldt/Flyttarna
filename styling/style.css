@@ -110,7 +110,8 @@ body {
 }
 
 .container .header a:hover {
-  color: #d65d00;
+  color: #a84901;
+  font-weight: bold;
 }
 
 .container .header i {
@@ -147,14 +148,14 @@ body {
 }
 
 .container .heading {
-  color: #d65d00;
+  color: #a84901;
   font-size: 50px;
   font-weight: 400;
 }
 
 @media (min-width: 600px) {
   .container .heading {
-    color: #d65d00;
+    color: #a84901;
     font-size: 60px;
     margin-left: 40px;
   }
@@ -223,6 +224,11 @@ body {
   font-weight: bold;
 }
 
+#current-page {
+  color: #a84901;
+  font-weight: bold;
+}
+
 .container.home {
   width: 100vw;
   position: relative;
@@ -242,7 +248,7 @@ body {
 }
 
 .container.home .logo a {
-  color: #d65d00;
+  color: #a84901;
 }
 
 .container.home .main.home .heading.home {
@@ -684,7 +690,7 @@ body {
 
 .om-oss-heading {
   margin: 0px 60px 20px 0px;
-  color: #d65d00;
+  color: #a84901;
   font-size: 60px;
   font-weight: 400;
 }
@@ -694,7 +700,8 @@ body {
 }
 
 #currentpage {
-  color: #d65d00;
+  color: #a84901;
+  font-weight: bold;
 }
 
 .main-text-and-pictures.main {
@@ -913,7 +920,7 @@ a {
 }
 
 .testimonials-wrapper .pil button:hover i:hover {
-  color: #d65d00;
+  color: #a84901;
 }
 
 .testimonials-wrapper .innehåll {
