@@ -94,7 +94,6 @@ body {
 // Patrik Nyfeldt
 
 .container.home {
-  height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
@@ -370,16 +369,16 @@ body {
 .main-text-and-pictures.main {
   display: flex;
   flex-direction: column;
-  padding:30px 30px 30px 100px;
+  padding: 30px 30px 30px 100px;
   @media (max-width: 700px) {
-    padding:15px;
+    padding: 15px;
   }
 
   @media (max-width: 1000px) {
-  padding: 20px;
+    padding: 20px;
   }
   @media (max-width: 850px) {
-  padding: 10px;
+    padding: 10px;
   }
   &.hide {
     display: none;
@@ -394,7 +393,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width:50%;
+  width: 50%;
   @media (max-width: 700px) {
     width: 100%;
     justify-content: center;
@@ -443,7 +442,6 @@ body {
     width: 50%;
   }
 }
-
 
 .footer.about-footer {
   &.fixed {
