@@ -420,6 +420,14 @@ body {
   @include flex(column, flex-start, center);
 }
 
+h3 {
+  color:$darkblue;
+}
+
+.företagsroll {
+  color: $turqouise;
+}
+
 .main-text {
   @include flex(column, flex-start, center);
   max-width: 50%;
@@ -432,6 +440,7 @@ body {
 
 .about-text {
   font-size: 15px;
+  color:$darkblue;
   @media (min-width: 1000px) {
     width: 50%;
   }
