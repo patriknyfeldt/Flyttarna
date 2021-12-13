@@ -180,6 +180,27 @@ body {
   background: #225675;
 }
 
+.footer nav {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer nav .current-page {
+  text-decoration: underline;
+}
+
 .footer .footerlink {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,10 +981,6 @@ a {
   .testimonials-footer {
     position: fixed;
   }
-}
-
-.testimonials-footer .current-page {
-  color: #d65d00;
 }
 
 #current-page {
