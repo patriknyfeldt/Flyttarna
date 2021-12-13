@@ -48,6 +48,7 @@ body {
       font-size: 17px;
       &:hover {
         color: $orange;
+        font-weight: bold;
       }
     }
     i {
@@ -98,6 +99,11 @@ body {
   .footerlink:hover {
     font-weight: bold;
   }
+}
+
+#current-page {
+  color: $orange;
+  font-weight: bold;
 }
 
 // Patrik Nyfeldt
@@ -369,6 +375,7 @@ body {
 }
 #currentpage {
   color: $orange;
+  font-weight: bold;
 }
 .main-text-and-pictures.main {
   display: flex;
