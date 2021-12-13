@@ -110,7 +110,7 @@ body {
 }
 
 .container .header a:hover {
-  color: #e6873c;
+  color: #d65d00;
 }
 
 .container .header i {
@@ -147,14 +147,14 @@ body {
 }
 
 .container .heading {
-  color: #e6873c;
+  color: #d65d00;
   font-size: 50px;
   font-weight: 400;
 }
 
 @media (min-width: 600px) {
   .container .heading {
-    color: #e6873c;
+    color: #d65d00;
     font-size: 60px;
     margin-left: 40px;
   }
@@ -222,7 +222,7 @@ body {
 }
 
 .container.home .logo a {
-  color: #e6873c;
+  color: #d65d00;
 }
 
 .container.home .main.home .heading.home {
@@ -268,7 +268,7 @@ body {
 
 .container.home .main.home .article.home .text-wrapper.home {
   width: 80%;
-  color: #3d8c95;
+  color: #336f75;
 }
 
 @media (min-width: 600px) {
@@ -669,7 +669,7 @@ body {
 
 .om-oss-heading {
   margin: 0px 60px 20px 0px;
-  color: #e6873c;
+  color: #d65d00;
   font-size: 60px;
   font-weight: 400;
 }
@@ -679,7 +679,7 @@ body {
 }
 
 #currentpage {
-  color: #e6873c;
+  color: #d65d00;
 }
 
 .main-text-and-pictures.main {
@@ -874,7 +874,7 @@ a {
 }
 
 .testimonials-wrapper p {
-  color: #3d8c95;
+  color: #336f75;
 }
 
 .testimonials-wrapper i {
@@ -897,7 +897,7 @@ a {
 }
 
 .testimonials-wrapper .pil button:hover i:hover {
-  color: #e6873c;
+  color: #d65d00;
 }
 
 .testimonials-wrapper .innehåll {
@@ -964,10 +964,10 @@ a {
 }
 
 .testimonials-footer .current-page {
-  color: #e6873c;
+  color: #d65d00;
 }
 
 #current-page {
-  color: #e6873c;
+  color: #d65d00;
 }
 /*# sourceMappingURL=style.css.map */
