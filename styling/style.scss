@@ -422,6 +422,14 @@ body {
   flex-direction: column;
 }
 
+h3 {
+  color:$darkblue;
+}
+
+.företagsroll {
+  color: $turqouise;
+}
+
 .main-text {
   display: flex;
   justify-content: flex-start;
@@ -439,6 +447,7 @@ body {
 
 .about-text {
   font-size: 15px;
+  color:$darkblue;
   @media (min-width: 1000px) {
     width: 50%;
   }

@@ -789,6 +789,14 @@ body {
           flex-direction: column;
 }
 
+h3 {
+  color: #225675;
+}
+
+.företagsroll {
+  color: #336f75;
+}
+
 .main-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,6 +832,7 @@ body {
 
 .about-text {
   font-size: 15px;
+  color: #225675;
 }
 
 @media (min-width: 1000px) {
